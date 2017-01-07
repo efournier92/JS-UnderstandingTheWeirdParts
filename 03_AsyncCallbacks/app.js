@@ -27,7 +27,7 @@ console.log("c: ", c);
 var a = 0;
 var b = false;
 
-function testEquality() {
+function testEquality(a, b) {
   if (a === b) {
     console.log('They are strictly equal.');
   } else if (a == b) {
