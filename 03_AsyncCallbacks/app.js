@@ -27,18 +27,12 @@ console.log("c: ", c);
 var a = 0;
 var b = false;
 
-function equal() {
-  if (a == b) {
-    console.log('They are equal.');
-  } else {
-    console.log('Nope! Not equal.');
-  }
-}
-
-function strictlyEqual() {
-  if (a == b) {
+function testEquality() {
+  if (a === b) {
     console.log('They are strictly equal.');
+  } else if (a == b) {
+    console.log('They are equal, but not strictly equal.');
   } else {
-    console.log('Nope! Not strictly equal.');
+    console.log('They are not equal at all.');
   }
 }
