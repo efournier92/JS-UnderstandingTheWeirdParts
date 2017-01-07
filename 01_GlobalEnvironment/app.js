@@ -5,4 +5,4 @@ function b() {
 }
 
 console.log(a);
-b();
+b(); 

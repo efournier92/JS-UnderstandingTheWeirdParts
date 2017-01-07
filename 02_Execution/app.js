@@ -1,5 +1,5 @@
 function b() {
-    console.log('Called b, thru a!');
+    console.log('Called b, thru c');
 }
 
 function a() {
@@ -7,3 +7,4 @@ function a() {
 }
 
 a();
+ 
