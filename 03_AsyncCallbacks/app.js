@@ -12,7 +12,14 @@ function clickHandler() {
 // listen for the click event
 document.addEventListener('click', clickHandler);
 
-
 console.log('waiting...');
 waitThreeSeconds();
 console.log('finished execution');
+
+var a = 2, b = 3, c = 4;
+
+a = b = c;
+
+console.log("a: ", a);
+console.log("b: ", b);
+console.log("c: ", c);
