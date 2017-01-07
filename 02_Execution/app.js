@@ -1,10 +1,11 @@
 function b() {
-    console.log('Called b, thru c');
+    console.log('Called b, thru a');
 }
+
+a();
 
 function a() {
   b();
 }
 
-a();
  
