@@ -1,8 +1,9 @@
-b();
-console.log(a);
-
-var a = 'Hello World!';
-
 function b() {
-    console.log('Called b!');
+    console.log('Called b, thru a!');
 }
+
+function a() {
+  b();
+}
+
+a();
