@@ -6,6 +6,8 @@ console.log(person.firstname, person["lastname"]);
 
 person.address = new Object();
 person.address.street = "123 Fake St.";
-console.log(person.address.street);
+person.address.city = "New York";
+person.address.state = "NY";
+console.log(person.address);
 
 console.log(person);
