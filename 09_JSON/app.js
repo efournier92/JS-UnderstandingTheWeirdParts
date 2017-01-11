@@ -3,14 +3,14 @@ var objectLiteral = {
   isAProgrammer: false 
 }
 
-console.log(objectLiteral); 
+console.log('Stringified:', JSON.stringify(objectLiteral));
+
+var jsonValue = JSON.parse('{ "firstName": "Tony", "isAProgrammer": true }');
+
+console.log('Parsed:', jsonValue);
 
 // SAMPLE JSON SYNTAX
 // {
 //   "firstName": "Mary",
 //   "isAProgrammer": true
 // }
-
-var jsonValue = JSON.parse('{ "firstName": "Tony", "isAProgrammer": true }');
-
-console.log(jsonValue);
