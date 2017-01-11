@@ -1,6 +1,6 @@
 var objectLiteral = {
-  firstName: 'Mary',
-  isAProgrammer: true
+  firstName: 'Mari',
+  isAProgrammer: false 
 }
 
 console.log(objectLiteral); 
@@ -10,3 +10,7 @@ console.log(objectLiteral);
 //   "firstName": "Mary",
 //   "isAProgrammer": true
 // }
+
+var jsonValue = JSON.parse('{ "firstName": "Tony", "isAProgrammer": true }');
+
+console.log(jsonValue);
