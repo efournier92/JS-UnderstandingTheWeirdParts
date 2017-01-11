@@ -9,9 +9,14 @@ var person = {
 };
 
 function greet(person) {
-  console.log('Hi', person.firstName);
+  console.log('Hi', person.firstName, person.lastName);
 };
 
 greet(person);
+
+greet({
+  firstName: 'Ringo',
+  lastName: 'Starr'
+});
 
 console.log(person);
