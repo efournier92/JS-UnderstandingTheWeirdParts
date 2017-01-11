@@ -1,8 +1,11 @@
-function greet(name) {
-  name = name || '';
+var greet = function(name) {
+  name = name || '<name here>';
   console.log('Hello ' + name);
-}
+};
 
 greet('Eric');
-greet();
+
+(function() {
+  console.log('IIFE was Invoked!');
+})();
 
