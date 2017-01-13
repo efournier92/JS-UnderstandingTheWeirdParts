@@ -27,3 +27,8 @@ function changeGreeting(obj) {
 changeGreeting(d);
 console.log('c2:', c);
 console.log('d2:', d);
+
+// equals operator sets up new memory space (new address)
+c = {greeting: 'howdy'};
+console.log('c3:', c);
+console.log('d3:', d);
