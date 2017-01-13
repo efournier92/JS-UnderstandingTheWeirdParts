@@ -9,15 +9,18 @@ var anonymousGreet = function() {
 anonymousGreet();
 
 function log(a) {
-  a();
+  console.log(a);
 }
 
 log(3);
-
 log("Test String");
 
-log(function() {
-  console.log('anonymous function: Hi!')
+function logFunc(a) {
+  a();
+}
+
+logFunc(function() {
+  console.log('')
 });
 
 
