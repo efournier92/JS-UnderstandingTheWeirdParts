@@ -1,7 +1,11 @@
 function greet(firstName, lastName, language) {
+
+  language = language || 'Spanish';
+
   console.log(firstName);
   console.log(lastName);
   console.log(language);
+  console.log(arguments);
   console.log('_________');
 }
 
