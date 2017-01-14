@@ -8,9 +8,11 @@ var arr = [
   },
   function(name) {
     var greeting = 'Hello'; 
-    console.log(greeting + name);
+    console.log(greeting, name);
   },
   "Hello"
 ];
 
 console.log(arr);
+
+arr[4](arr[3].name);
