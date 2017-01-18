@@ -5,7 +5,18 @@
     global.greeting = 'Hello';
     console.log(greeting + ' ' + name);
     
-}(window, 'Ringo')); // IIFE
+}(window, 'Ringo'));
+
+console.log(greeting);
+
+// alter global context greeting
+(function(global, name) {
+    
+    var greeting = 'Hello';
+    global.greeting = 'Shalom';
+    console.log(greeting + ' ' + name);
+    
+}(window, 'George'));
 
 console.log(greeting);
 
