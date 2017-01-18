@@ -16,7 +16,7 @@ console.log(greeting);
     global.greeting = 'Shalom';
     console.log(greeting + ' ' + name);
     
-}(window, 'George'));
+}(window, 'Ringo'));
 
 console.log(greeting);
 
