@@ -11,10 +11,17 @@ var person = {
 
 var logName = function(lang1, lang2) {
 
-  console.log('Logged: ' + this.getFullName());
+  console.log('Logged:', this.getFullName());
+  console.log('Arguments: ', lang1, lang2);
+  console.log('___________');
+
 
 }
 
 var logPersonName = logName.bind(person);
+logPersonName('en');
 
-logPersonName();
+logName.call(person, 'en', 'es');
+
+logName.apply(person, ['en', 'es']);
+
