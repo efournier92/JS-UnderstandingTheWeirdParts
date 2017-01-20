@@ -18,3 +18,9 @@ console.log(ringo.getFullName());
 console.log(ringo.firstName);
 console.log(ringo.lastName);
 
+var beyonce = {
+  firstName: 'Beyonce'
+}
+beyonce.__proto__ = person;
+console.log(beyonce.getFullName());
+
