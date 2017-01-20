@@ -24,8 +24,8 @@ for (var prop in ringo) {
 }
 
 var george = {
-  address: '123 Fake St.'
-  get FormalFullName: function() {
+  address: '234 Fake St.',
+  getFormalFullName: function() {
     return this.lastName + ', ' + this.firstName;
   }
 }
@@ -36,4 +36,6 @@ var paul = {
   }
 }
 
+_.extend(ringo, george, paul);
 
+console.log(ringo);
