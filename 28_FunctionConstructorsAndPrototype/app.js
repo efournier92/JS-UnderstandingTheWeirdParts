@@ -12,11 +12,11 @@ var ringo = new Person('Ringo', 'Starr');
 console.log(ringo);
 console.log(ringo.getFullName());
 
-var george = new Person('George', 'Harrison');
-console.log(george);
-
 Person.prototype.getFormalFullName = function() {
   return this.lastName + ', ' + this.firstName;
 }
+
+var george = new Person('George', 'Harrison');
 console.log(george);
 console.log(george.getFormalFullName());
+
