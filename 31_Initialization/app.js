@@ -3,7 +3,7 @@ var people = [
     // the 'ringo' object
     firstName: 'Ringo',
     lastName: 'Starr',
-    addressed: [
+    addresses: [
       '123 Yellow Submarine Blvd',
       '485 Abbey Rd'
     ]
@@ -12,12 +12,15 @@ var people = [
     // the 'john' object
     firstName: 'John',
     lastName: 'Lennon',
-    addressed: [
+    addresses: [
       '485 Abbey Rd',
       '112 Penny Ln'
     ],
     greet: function() {
-      return 'Hello!';
+      return 'Hello ' + this.firstName + '!';
     }
   }
 ]
+
+var john = people[1];
+console.log(john.greet());
