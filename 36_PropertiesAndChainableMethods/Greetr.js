@@ -17,7 +17,7 @@
   var supportedLangs = ['en', 'es'];
 
   var greetings = {
-    en: 'Hello',
+    en: 'Hi',
     es: 'Hola'
   };
 
@@ -72,33 +72,29 @@
 
     log: function() {
       if (console) {
-        console.log(
-          logMessages[this.language] + ': ' + this.fullName();
-        )    
+        console.log( logMessages[this.language] + ': ' + this.fullName());
       }
       return this;
     },
+
     setLang: function(lang) {
       this.language = lang;
       this.validate();
     }
+  };
+
+  Greetr.init = function(firstName, lastName, language) {
+
+    var self = this;
+    self.firstName = firstName || '';
+    self.lastName = lastName || '';
+    self.language = language || 'en';
+
   }
 
-};
+  Greetr.init.prototype = Greetr.prototype;
 
-Greetr.init = function(firstName, lastName, language) {
-
-  var self = this;
-  self.firstName = firstName || '';
-  self.lastName = lastName || '';
-  self.language = language || 'en';
-
-}
-
-Greetr.init.prototype = Greetr.prototype;
-
-global.Greetr = global.G$ = Greetr;
-
+  global.Greetr = global.G$ = Greetr;
 
 
 }(window, jQuery));

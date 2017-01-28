@@ -1,2 +1,4 @@
 var g = G$('Ringo', 'Starr');
-console.log(g);
+g.greet();
+g.setLang('es');
+g.greet();
