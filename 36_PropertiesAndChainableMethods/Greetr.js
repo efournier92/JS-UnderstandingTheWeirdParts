@@ -16,15 +16,20 @@
 
   var supportedLangs = ['en', 'es'];
 
-  greetings = {
+  var greetings = {
     en: 'Hello',
     es: 'Hola'
-  }
+  };
   
-  formalGreetings = {
+  var formalGreetings = {
     en: 'Salutations',
     es: 'Saludos'
-  }
+  };
+
+  var logMessages = {
+    en: 'Logged in...',
+    es: 'Inició sesión...',
+  };
 
   Greetr.prototype = {};
   
