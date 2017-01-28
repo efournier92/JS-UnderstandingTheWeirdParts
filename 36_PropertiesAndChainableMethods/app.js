@@ -1,2 +1,2 @@
-var g = G$('John', 'Doe');
+var g = G$('Ringo', 'Starr');
 console.log(g);
