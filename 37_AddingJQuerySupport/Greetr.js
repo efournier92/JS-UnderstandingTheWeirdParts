@@ -80,10 +80,34 @@
 
     setLang: function(lang) {
       this.language = lang;
+
       this.validate();
 
       return this;
+    },
+    
+    HTMLGreeting: function(selector, formal) {
+
+      if (!$) {
+        throw 'jQuery not loaded';
+      }
+
+      if (!selector) {
+        throw 'jQuery selector not found';
+      }
+
+      var msg;
+      if (formal) {
+        msg = this.formalGreeting();
+      } else {
+        msg = this.greeting();
+      }
+
+      $(selector).html(msg);
+
+      return this;
     }
+
   };
 
   Greetr.init = function(firstName, lastName, language) {

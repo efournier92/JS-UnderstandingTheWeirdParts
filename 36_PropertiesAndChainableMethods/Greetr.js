@@ -53,13 +53,16 @@
 
     greet: function(formal) {
       var msg;
-
       // if undefined or null, it is coerced to 'false'
       if (formal) {
         msg = this.formalGreeting();
       } else {
         msg = this.greeting();
       }
+      
+      $(selector).html(msg);
+
+      return this;
 
       if (console) {
         console.log(msg);
@@ -84,6 +87,18 @@
 
       return this;
     }
+    
+    HTMLGreeting: function(selector, formal) {
+      if (!$) {
+        throw 'jQuery not loaded';
+      }
+
+      if (!selector) {
+        throw 'selector not found';
+      }
+
+    }
+
   };
 
   Greetr.init = function(firstName, lastName, language) {
