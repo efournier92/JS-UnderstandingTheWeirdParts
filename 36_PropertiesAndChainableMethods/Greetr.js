@@ -48,7 +48,7 @@
     },
 
     formalGreeting: function() {
-      return formalGreetings[this.language] + ' ' + this.fullName + '.';
+      return formalGreetings[this.language] + ',' + this.fullName() + '.';
     },
 
     greet: function(formal) {
@@ -72,14 +72,17 @@
 
     log: function() {
       if (console) {
-        console.log( logMessages[this.language] + ': ' + this.fullName());
+        console.log(logMessages[this.language] + ': ' + this.fullName());
       }
+
       return this;
     },
 
     setLang: function(lang) {
       this.language = lang;
       this.validate();
+
+      return this;
     }
   };
 
@@ -95,6 +98,5 @@
   Greetr.init.prototype = Greetr.prototype;
 
   global.Greetr = global.G$ = Greetr;
-
 
 }(window, jQuery));
