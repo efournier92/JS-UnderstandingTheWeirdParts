@@ -8,7 +8,7 @@
 // Simple to type 'G$()' structure
 // Supports jQuery
 /////////////////////////////////////////////////////////////////
-(function(global, $) {
+;(function(global, $) {
   
   // 'new' an object
   var Greetr = function(firstName, lastName, language) {
@@ -57,7 +57,7 @@
     },
 
     formalGreeting: function() {
-      return formalGreetings[this.language] + ',' + this.fullName() + '.';
+      return formalGreetings[this.language] + ', ' + this.fullName() + '.';
     },
 
     greet: function(formal) {
