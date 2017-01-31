@@ -132,6 +132,8 @@
     self.lastName = lastName || '';
     self.language = language || 'en';
 
+    self.validate();
+
   }
 
   // allows us to exclude the 'new' keyword
