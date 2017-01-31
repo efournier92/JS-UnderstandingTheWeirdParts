@@ -8,14 +8,15 @@
 // Simple to type 'G$()' structure
 // Supports jQuery
 /////////////////////////////////////////////////////////////////
-;(function(global, $) {
+(function(global, $) {
   
-  // 'new' an object
+  // 'new' object method
   var Greetr = function(firstName, lastName, language) {
     return new Greetr.init(firstName, lastName, language);
   }
   
-  // hidden within the scope of the IIFE and never diretly accessible
+  // this is hidden within the scope of the IIFE
+  // therefore, it's never directly accessible
   var supportedLangs = ['en', 'es'];
   
   // informal greetings
@@ -51,7 +52,7 @@
       } 
     },
 
-    // retrive messages from object by referring to preperties using [] syntax
+    // retrieve messages from object by referring to preperties using [] syntax
     greeting: function() {
       return greetings[this.language] + ' ' + this.firstName + '!';
     },

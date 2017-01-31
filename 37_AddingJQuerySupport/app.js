@@ -1,7 +1,7 @@
 // gets a new object
 var g = G$('Ringo', 'Starr');
 
-// use our chainable methods
+// use chainable method
 g.greet().setLang('en').greet(true);
 
 $('#login').click(function() {
